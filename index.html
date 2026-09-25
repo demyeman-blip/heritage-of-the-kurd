@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage of the Kurds</title>
+  
+    <meta name="description" content="Heritage of the Kurds - Discover cultural heritage and history.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="untitled design.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Splash Screen / Açılış Ekranı -->
+    <div id="splash-screen">
+        <img src="untitled design.png" alt="Heritage of the Kurds Logo" class="splash-logo">
+    </div>
+
+    <div class="kilim-background-canvas"></div>
+    <div class="gradient-overlay-canvas"></div>
+
+    <header class="main-header">
+        <div class="brand-identity">
+            <div class="brand-logo-svg">
+                <svg viewBox="0 0 100 100">
+                    <path d="M20,90 V45 A30,30 0 0,1 80,45 V90" fill="none" stroke="#b2814b" stroke-width="5.5"/>
+                    <path d="M35,90 V50 A15,15 0 0,1 65,50 V90" fill="none" stroke="#b2814b" stroke-width="3.5"/>
+                    <circle cx="50" cy="12" r="6" fill="#b2814b"/>
+                </svg>
+            </div>
+            <div class="brand-text">
+                <span class="brand-main">HERITAGE OF THE KURDS</span>
+                <span class="brand-sub" data-i18n="brand_sub">KURDISH HERITAGE PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="navigation-menu">
+            <ul class="nav-list">
+                <li><a href="#ana-sayfa" class="nav-item active" data-i18n="nav_home">Home</a></li>
+                <li><a href="#moduller" class="nav-item" data-i18n="nav_features">Platform Features</a></li>
+                <li><a href="#indirme" class="nav-item" data-i18n="nav_download">Download App</a></li>
+            </ul>
+        </nav>
+
+        <div class="language-dropdown-wrapper">
+            <button class="lang-trigger-btn" onclick="toggleLangMenu(event)">
+                <i class="fa-solid fa-globe"></i> 
+                <span id="current-lang-text">English</span> 
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            
+            <div class="lang-dropdown-menu" id="langMenu">
+                <a href="#" class="lang-opt" data-lang="KBR" data-title="Kurdi ( بادینی )">Kurdi ( بادینی )</a>
+                <a href="#" class="lang-opt" data-lang="KSR" data-title="Kurdi ( سورانی )">Kurdi ( سورانی )</a>
+                <a href="#" class="lang-opt" data-lang="AR" data-title="عربي">عربي</a>
+                <a href="#" class="lang-opt" data-lang="TR" data-title="Türkçe">Türkçe</a>
+                <a href="#" class="lang-opt active" data-lang="EN" data-title="English">English</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="ana-sayfa" class="hero-showcase">
+        <div class="hero-left-billboard">
+            <div class="badge-announcement" data-i18n="hero_badge">Next Generation Digital Archive Platform</div>
+            <h1 data-i18n="hero_title">HERITAGE OF A NATION,<br><span class="highlight-text">CARRIED TO THE FUTURE.</span></h1>
+            <p data-i18n="hero_desc">We revitalize thousands of years of Kurdish culture, deep-rooted oral literature, unique handicrafts, and historical chronology in the digital world. Join us on this journey to leave a mark on the future, discover a rich heritage, and introduce these values to the world.</p>
+            
+            <div class="hero-action-cluster">
+                <a href="#indirme" class="action-btn-primary"><i class="fa-solid fa-cloud-arrow-down"></i> <span data-i18n="btn_discover">Discover App</span></a>
+                <a href="#moduller" class="action-btn-secondary" data-i18n="btn_features">Explore Features</a>
+            </div>
+
+            <div class="kurdish-sun-vector-bg">☀️</div>
+        </div>
+
+        <div class="hero-right-mockups">
+            <div class="multidevice-viewport">
+                <div class="window-frame desktop-frame">
+                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1000&q=80" alt="Kadim Belgeler ve Tarih Arşivi" class="screenshot-img">
+                </div>
+                <div class="window-frame phone-frame">
+                    <img src="kurds-ii-22.png" alt="Tarihi Coğrafya ve Hafıza" class="screenshot-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="moduller" class="core-modules-section">
+        <div class="section-header-center">
+            <h2 data-i18n="mod_sec_title">App Content & Digital Layers</h2>
+            <p data-i18n="mod_sec_desc">"Heritage of the Kurds" app transmits cultural heritage to the future through three main pillars.</p>
+        </div>
+
+        <div class="modules-showcase-grid">
+            <div class="module-glass-card">
+                <div class="module-badge-icon"><i class="fa-solid fa-landmark-flag"></i></div>
+                <h3 data-i18n="mod_1_title">Dîrok (History & Chronology)</h3>
+                <p data-i18n="mod_1_desc">Kurdish history through the ages. Verified data archive with map integrations, historical documents, and academic publications.</p>
+            </div>
+
+            <div class="module-glass-card">
+                <div class="module-badge-icon"><i class="fa-solid fa-palette"></i></div>
+                <h3 data-i18n="mod_2_title">Çand (Culture & Art)</h3>
+                <p data-i18n="mod_2_desc">Codes of traditional motifs (Deq), meanings of rug patterns, folkloric clothes, and digital replicas of endangered handicrafts.</p>
+            </div>
+
+            <div class="module-glass-card">
+                <div class="module-badge-icon"><i class="fa-solid fa-scroll"></i></div>
+                <h3 data-i18n="mod_3_title">Destan (Literature & Mythology)</h3>
+                <p data-i18n="mod_3_desc">From Mem û Zîn to Siyabend û Xecê, classical epics, audio archives of dengbêj tradition, and interactive mythological storytelling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="indirme" class="app-download-jumbotron">
+        <div class="jumbotron-inner">
+            <h2 data-i18n="app_sec_title">Heritage of the Kurds on Mobile</h2>
+            <p data-i18n="app_sec_desc">Carry cultural memory in your pocket. Fully compatible with all iOS and Android devices.</p>
+            
+            <div class="app-market-badges">
+                <a href="#" class="market-badge-link">
+                    <i class="fa-brands fa-apple"></i>
+                    <div class="badge-text-strings">
+                        <span>Download on the</span>
+                        <strong>App Store</strong>
+                    </div>
+                </a>
+                <a href="#" class="market-badge-link">
+                    <i class="fa-brands fa-google-play"></i>
+                    <div class="badge-text-strings">
+                        <span>GET IT ON</span>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/heritageofthekurds" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1KEZ8xLC3k/" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Heritage of the Kurds. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close-btn" onclick="closePrivacyModal()">&times;</button>
+            <h3 data-i18n="privacy_modal_title">Privacy Policy</h3>
+            <div class="modal-body" data-i18n="privacy_modal_body">
+                <p>Welcome to Heritage of the Kurds. We value your privacy and are committed to protecting your personal data.</p>
+                <p>We do not track or sell your personal information. Data collected through mobile applications is used strictly to enhance your user experience and preserve digital archive accessibility.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Splash Screen Timer
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                if (splash) {
+                    splash.classList.add('hide');
+                }
+            }, 2500);
+        });
+
+        // Privacy Policy Modal Controls
+        function openPrivacyModal(e) {
+            e.preventDefault();
+            document.getElementById('privacy-modal').classList.add('show');
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacy-modal').classList.remove('show');
+        }
+
+        const translations = {
+            "KBR": {
+                "brand_sub": "PORTALA MÎRASA KURDÎ",
+                "nav_home": "Malper",
+                "nav_features": "Taybetmendî",
+                "nav_download": "Daxistin",
+                "hero_badge": "Platforma Arşîva Dîjîtal a Nifşê Nû",
+                "hero_title": "MÎRASÊ MÎLLETEKÎ, <br><span class='highlight-text'>TÊ VEGUHASTIN BÛ PAŞEROJÊ.</span>",
+                "hero_desc": "Em çanda Kurdî ya bi hezaransalî, edebiyata devkî ya kûr, hunerên destan yên bêhemta û kronolojiya dîrokî di cîhana dîjîtal de ji nû ve zindî dikin. Ji bo ku hûn şopekê li paşerojê bihêlin, mîraseke dewlemend keşf bikin û van nirxan di cîhanê de bidin nasîn, hûn jî beşdarî vê rêwîtiyê bibin.",
+                "btn_discover": "Aplikasyonê Keşf Bikin",
+                "btn_features": "Taybetmendiyan Binihêrin",
+                "mod_sec_title": "Naveroka Sepanê & Qatên Dîjîtal",
+                "mod_sec_desc": "Serlêdana 'Heritage of the Kurds' mirasa çandî bi sê stûnên sereke veduhêze paşerojê.",
+                "mod_1_title": "Dîrok (Tarih û Kronolojî)",
+                "mod_1_desc": "Dîroka Kurdan di nav serdeman de. Arşîva daneyan bi nexşe, belgeyên dîrokî û weşanan.",
+                "mod_2_title": "Çand (Kültür û Huner)",
+                "mod_2_desc": "Şîfreyên motîfên kevneşopî (Deq), wateya şêweyên kîlîman û cil û bergên folklorî.",
+                "mod_3_title": "Destan (Edebiyat û Mîtolojî)",
+                "mod_3_desc": "Ji Mem û Zînê heta Siyabend û Xecê destanên klasîk û arşîvên dengbêjiyê.",
+                "app_sec_title": "Heritage of the Kurds Di Cîhana Mobil De",
+                "app_sec_desc": "Hafızaya çandî di bêrîka xwe de hilgirin. Ji bo hemî amûrên iOS û Android-ê hevaheng e.",
+                "footer_privacy": "Siyaseta Siyasî",
+                "privacy_modal_title": "Siyaseta Siyasî",
+                "privacy_modal_body": "<p>Bi xêr hatin Heritage of the Kurds. Em ji bo parastina agahdariyên we yên kesane girîngiyê didin emniyeta we.</p>"
+            },
+            "KSR": {
+                "brand_sub": "پۆرتال ی کەلەپووری کوردی",
+                "nav_home": "ماڵەوە",
+                "nav_features": "تایبەتمەندییەکان",
+                "nav_download": "داگرتن",
+                "hero_badge": "پلاتفۆرمی ئەرشیفی دیجیتاڵی نەوەی نوێ",
+                "hero_title": "کەلەپووری نەتەوەیەک، <br><span class='highlight-text'>دەگوێزرێتەوە بۆ داهاتوو.</span>",
+                "hero_desc": "ئێمە کەلتووری هەزاران ساڵەی کوردی، ئەدەبی زارەکی ڕەسەن، دەستکردە ناوازەکان و مێژووی دێرین لە جیهانی دیجیتاڵیدا نوێ دەکەینەوە. بۆ ئەوەی ڕێچکەیەک بۆ داهاتوو جێبهێڵیت، کەلەپوورێکی دەوڵەمەند بدۆزیتەوە و ئەم بەهایانە بە جیهان بناسێنیت، تەواوی ئەم گەشتە بپڕێنەوە.",
+                "btn_discover": "ئەپڵیکەیشنەکە بدۆزەرەوە",
+                "btn_features": "تایبەتمەندییەکان ببینە",
+                "mod_sec_title": "ناوەرۆکی ئەپ و چێنە دیجیتاڵییەکان",
+                "mod_sec_desc": "ئەپڵیکەیشنی 'Heritage of the Kurds' کەلەپووری ڕەوشەنبیری لە ڕێگەی سێ کۆڵەکەی سەرەکییەوە دەگوێزێتەوە.",
+                "mod_1_title": "مێژوو (Tarih û Kronolojî)",
+                "mod_1_desc": "مێژووی کورد لە سەردەمەکاندا. ئەرشیفی بەڵگەنامە مێژووییەکان و نەخشەکان.",
+                "mod_2_title": "کەلتوور (Kültür û Huner)",
+                "mod_2_desc": "کۆدەکانی نەخشی نەریتی (دەق)، واتا کێشراوەکانی بەرماڵ و جلی فۆلکلۆری.",
+                "mod_3_title": "داستان (Edebiyat û Mîtolojî)",
+                "mod_3_desc": "لە مەملەکەت و ژینەوە تا سیابەند و خەجێ، داستانە کلاسیکییەکان و ئەرشیفی دەنگبێژ.",
+                "app_sec_title": "Heritage of the Kurds لە جیهانی مۆبایلدا",
+                "app_sec_desc": "بیرەوەری ڕۆشنبیری لە گیرفانتدا هەڵبگرە. گونجاوە لەگەڵ هەموو ئامێرەکانی iOS و Android.",
+                "footer_privacy": "سیاسەتی تایبەتمەندی",
+                "privacy_modal_title": "سیاسەتی تایبەتمەندی",
+                "privacy_modal_body": "<p>بەخێربێن بۆ Heritage of the Kurds. ئێمە ڕێز لە تایبەتمەندییەکانتان دەگرین.</p>"
+            },
+            "AR": {
+                "brand_sub": "بوابة التراث الكردي",
+                "nav_home": "الرئيسية",
+                "nav_features": "ميزات المنصة",
+                "nav_download": "تحميل التطبيق",
+                "hero_badge": "منصة الأرشيف الرقمي للجيل الجديد",
+                "hero_title": "تراث أمة، <br><span class='highlight-text'>ينتقل إلى المستقبل.</span>",
+                "hero_desc": "نعيد إحياء آلاف السنين من الثقافة الكردية، والأدب الشفهي العريق، والحرف اليدوية الفريدة، والتسلسل الزمني التاريخي في العالم الرقمي. انضم إلى هذه الرحلة لترك أثر في المستقبل، واكتشاف تراث غني، وإبراز هذه القيم للعالم.",
+                "btn_discover": "اكتشف التطبيق",
+                "btn_features": "استكشف الميزات",
+                "mod_sec_title": "محتوى التطبيق والطبقات الرقمية",
+                "mod_sec_desc": "ينقل تطبيق 'Heritage of the Kurds' التراث الثقافي إلى المستقبل عبر ثلاثة أعمدة رئيسية.",
+                "mod_1_title": "التاريخ (التاريخ والتسلسل الزمني)",
+                "mod_1_desc": "التاريخ الكردي عبر العصور. أرشيف بيانات موثق مع تكامل الخرائط والوثائق التاريخية.",
+                "mod_2_title": "الثقافة (الثقافة والفن)",
+                "mod_2_desc": "رموز الزخارف التقليدية (الندق)، ومعاني أنماط السجاد، والملابس الفلكلورية.",
+                "mod_3_title": "الملحمة (الأدب والميثولوجيا)",
+                "mod_3_desc": "من مم وزين إلى سيابند وخجي، الملاحم الكلاسيكية وأرشيفات الصوت للغناء الشعبي.",
+                "app_sec_title": "Heritage of the Kurds في عالم الهواتف",
+                "app_sec_desc": "احمل الذاكرة الثقافية في جيبك. متوافق تماماً مع جميع أجهزة iOS و Android.",
+                "footer_privacy": "سياسة الخصوصية",
+                "privacy_modal_title": "سياسة الخصوصية",
+                "privacy_modal_body": "<p>مرحباً بكم في Heritage of the Kurds. نحن نلتزم بحماية خصوصيتكم وبيناتكم الشخصية.</p>"
+            },
+            "TR": {
+                "brand_sub": "KÜRT MİRASI PORTALI",
+                "nav_home": "Ana Sayfa",
+                "nav_features": "Platform Özellikleri",
+                "nav_download": "Uygulamayı İndir",
+                "hero_badge": "Yeni Nesil Dijital Arşiv Platformu",
+                "hero_title": "BİR MİLLETİN MİRASI,<br><span class='highlight-text'>GELECEĞE TAŞINIYOR.</span>",
+                "hero_desc": "Binlerce yıllık Kürt kültürünü, köklü sözlü edebiyatını, eşsiz el sanatlarını ve tarihsel kronolojisini dijital dünyada yeniden canlandırıyoruz. Geleceğe iz bırakmak, zengin bir mirasi keşfetmek ve bu değerleri dünyaya tanıtmak için siz de bu yolculuğa katılın.",
+                "btn_discover": "Uygulamayı Keşfet",
+                "btn_features": "Özellikleri İncele",
+                "mod_sec_title": "Uygulama İçeriği & Dijital Katmanlar",
+                "mod_sec_desc": "\"Heritage of the Kurds\" uygulaması, kültürel mirasi üç ana sütun üzerinden geleceğe aktarır.",
+                "mod_1_title": "Dîrok (Tarih ve Kronoloji)",
+                "mod_1_desc": "Çağlar boyunca Kürt tarihi. Harita entegrasyonları, tarihi belgeler, akademik yayınlar ve kronolojik zaman tüneli ile doğrulanmış veri arşivi.",
+                "mod_2_title": "Çand (Kültür ve Sanat)",
+                "mod_2_desc": "Geleneksel motiflerin şifreleri (Deq), kilim desenlerinin anlamları, folklorik kıyafetler ve kaybolmaya yüz tutmuş el sanatlarının dijital replikaları.",
+                "mod_3_title": "Destan (Edebiyat ve Mitoloji)",
+                "mod_3_desc": "Mem û Zîn'den Siyabend û Xecê'ye kadar klasik destanlar, dengbêjlik geleneğinin ses arşivleri ve interaktif mitolojik hikaye anlatımları.",
+                "app_sec_title": "Heritage of the Kurds Mobil Dünyada",
+                "app_sec_desc": "Kültürel hafızayı cebinizde taşıyın. Tüm iOS ve Android cihazlarla tam uyumlu, akıcı arayüz deneyimi.",
+                "footer_privacy": "Gizlilik Politikası",
+                "privacy_modal_title": "Gizlilik Politikası",
+                "privacy_modal_body": "<p>Heritage of the Kurds'a hoş geldiniz. Gizliliğinize önem veriyor ve kişisel verilerinizi koruyoruz.</p>"
+            },
+            "EN": {
+                "brand_sub": "KURDISH HERITAGE PORTAL",
+                "nav_home": "Home",
+                "nav_features": "Platform Features",
+                "nav_download": "Download App",
+                "hero_badge": "Next Generation Digital Archive Platform",
+                "hero_title": "HERITAGE OF A NATION,<br><span class='highlight-text'>CARRIED TO THE FUTURE.</span>",
+                "hero_desc": "We revitalize thousands of years of Kurdish culture, deep-rooted oral literature, unique handicrafts, and historical chronology in the digital world. Join us on this journey to leave a mark on the future, discover a rich heritage, and introduce these values to the world.",
+                "btn_discover": "Discover App",
+                "btn_features": "Explore Features",
+                "mod_sec_title": "App Content & Digital Layers",
+                "mod_sec_desc": "\"Heritage of the Kurds\" app transmits cultural heritage to the future through three main pillars.",
+                "mod_1_title": "Dîrok (History & Chronology)",
+                "mod_1_desc": "Kurdish history through the ages. Verified data archive with map integrations, historical documents, and academic publications.",
+                "mod_2_title": "Çand (Culture & Art)",
+                "mod_2_desc": "Codes of traditional motifs (Deq), meanings of rug patterns, folkloric clothes, and digital replicas of endangered handicrafts.",
+                "mod_3_title": "Destan (Literature & Mythology)",
+                "mod_3_desc": "From Mem û Zîn to Siyabend û Xecê, classical epics, audio archives of dengbêj tradition, and interactive mythological storytelling.",
+                "app_sec_title": "Heritage of the Kurds on Mobile",
+                "app_sec_desc": "Carry cultural memory in your pocket. Fully compatible with all iOS and Android devices.",
+                "footer_privacy": "Privacy Policy",
+                "privacy_modal_title": "Privacy Policy",
+                "privacy_modal_body": "<p>Welcome to Heritage of the Kurds. We value your privacy and are committed to protecting your personal data.</p><p>We do not track or sell your personal information. Data collected through mobile applications is used strictly to enhance your user experience and preserve digital archive accessibility.</p>"
+            }
+        };
+
+        function toggleLangMenu(event) {
+            if(event) event.stopPropagation(); 
+            document.getElementById("langMenu").classList.toggle("show");
+        }
+
+        document.querySelectorAll('.lang-opt').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const langCode = this.getAttribute('data-lang');
+                const langTitle = this.getAttribute('data-title');
+                
+                document.querySelectorAll('.lang-opt').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById('current-lang-text').innerText = langTitle;
+
+                if (langCode === "AR" || langCode === "KSR") {
+                    document.documentElement.dir = "rtl";
+                } else {
+                    document.documentElement.dir = "ltr";
+                }
+
+                if (translations[langCode]) {
+                    const langData = translations[langCode];
+                    
+                    document.querySelectorAll('[data-i18n]').forEach(element => {
+                        const key = element.getAttribute('data-i18n');
+                        if (langData[key]) {
+                            element.innerHTML = langData[key];
+                        }
+                    });
+                }
+
+                document.getElementById("langMenu").classList.remove("show");
+            });
+        });
+
+        window.addEventListener('click', function() {
+            const menu = document.getElementById("langMenu");
+            if(menu) menu.classList.remove("show");
+        });
+    </script>
+</body>
+</html>
