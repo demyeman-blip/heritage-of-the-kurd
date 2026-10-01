@@ -35,6 +35,10 @@ body {
     min-height: 100vh;
     padding-top: var(--nav-height);
 }
+body {
+    max-width: 1200px; /* Ekran ne kadar büyük olursa olsun tasarım bu genişlikte kalır */
+    margin: 0 auto;    /* Sayfayı ekranda tam ortalar */
+}
 
 /* Splash Screen (Açılış Ekranı) Styles */
 #splash-screen {
@@ -375,6 +379,11 @@ body {
     border-radius: 18px;
     border-width: 6px;
     z-index: 5;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Resmin oranını bozmadan kutuya sığdırır */
 }
 
 .screenshot-img {
